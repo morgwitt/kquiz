@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.QuestionsController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="Arquivo">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#closeProgram" text="Fechar" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label id="lblTitulo" fx:id="lblTitle" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0" text="lblTitle" textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+               </children>
+            </Pane>
+            <RadioButton fx:id="rdbA" mnemonicParsing="false" onAction="#radioSelected" text="a)">
+               <VBox.margin>
+                  <Insets left="20.0" top="7.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="rdbB" mnemonicParsing="false" onAction="#radioSelected" text="b)">
+               <VBox.margin>
+                  <Insets left="20.0" top="7.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="rdbC" mnemonicParsing="false" onAction="#radioSelected" text="c)">
+               <VBox.margin>
+                  <Insets left="20.0" top="7.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="rdbD" mnemonicParsing="false" onAction="#radioSelected" text="d)">
+               <VBox.margin>
+                  <Insets left="20.0" top="7.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="rdbE" mnemonicParsing="false" onAction="#radioSelected" text="e)">
+               <VBox.margin>
+                  <Insets left="20.0" top="7.0" />
+               </VBox.margin>
+            </RadioButton>
+            <HBox>
+               <children>
+                  <Label text="Pontuação:">
+                     <HBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblScore" prefWidth="80.0" text="lblScore">
+                     <HBox.margin>
+                        <Insets left="5.0" top="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnNext" disable="true" mnemonicParsing="false" onAction="#nextQuestion" text="Respoder">
+                     <HBox.margin>
+                        <Insets left="300.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
